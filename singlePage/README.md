@@ -21,7 +21,7 @@ cnpm run dev
 ```
 需要注意的是，webpack搭建的服务器端口是8080，有些同学为了在本地测试接口，但是tomcat的默认端口也是8080，所以需要在config文件夹下面的index.js中修改下端口。如下图:
 
-![image](https://github.com/Ethan-Wan/vueTemplate/tree/master/singlePage/images-folde/serverConfig.jpg)
+![image](./images-folde/serverConfig.jpg)
 
 既然讲到了接口测试，那顺便提一下在项目中接口是如何测试的吧。正如上图所示，通过proxyTable的设置，可以很方便的进行代理服务器的配置，即使跨域也能通过设置changeOrigin: true很方便的解决，这一切都是因为在项目中默认安装了[http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware)这个插件实现的
 
@@ -35,7 +35,7 @@ cnpm run dev
 ## 工程说明
 当你打开工程的时候会看到src中如下目录，没错，项目中功能开发都在src文件夹下进行
 
-![image](https://github.com/Ethan-Wan/vueTemplate/tree/master/singlePage/images-folde/catalogue.jpg)
+![image](./images-folde/catalogue.jpg)
 
 1. assets: 资源文件夹，由于是单页应用，所以所有的项目资源都可以放在该文件夹下
 2. common：用来放一些通用的东西，比如样式或者一些全局js等
