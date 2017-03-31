@@ -1,9 +1,15 @@
 import Vue from 'vue'
-import App from './App'
+import Layout from './components/layout'
+import router from './router.config'
+import resource from 'vue-resource'
+
+Vue.use(resource)
+Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  template: '<App/>',
-  components: { App }
+  router,
+  template: '<Layout/>',
+  components: { Layout }
 })
